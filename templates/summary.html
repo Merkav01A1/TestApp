@@ -1,0 +1,15 @@
+<!-- Szablon HTML dla summary.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Podsumowanie</title>
+</head>
+<body>
+    <h1>Podsumowanie</h1>
+    <ul>
+        {% for question_number, answer in answers.items() %}
+            <li>{{ question_number }}. Odpowiedź: {{ answer }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

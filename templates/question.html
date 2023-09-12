@@ -1,0 +1,18 @@
+<!-- Szablon HTML dla question.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pytanie</title>
+</head>
+<body>
+    <h1>{{ question['question'] }}</h1>
+    <form method="POST">
+        {% for option in question['options'] %}
+            <input type="radio" name="answer" value="{{ option }}"> {{ option }}<br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Następne pytanie">
+    </form>
+</body>
+</html>
+
